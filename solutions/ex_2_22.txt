@@ -1,0 +1,11 @@
+add a -> (cons a nil) -> (a nil) -> add b -> (b a nil)
+
+the first element added while constructing the lists is placed at the end
+
+
+interchanging the parameters does not work because 
+
+(cons answer (square (car things)))
+
+the above evaluates to a list of 2 elements which is wrong.
+

@@ -1,0 +1,8 @@
+append would create new list  (1 2 3 4 5 6)
+
+cons would add an item to the starting of the list
+((1 2 3) 4 5 6)
+
+list would create a new list with the parameters
+
+((1 2 3) (4 5 6))
