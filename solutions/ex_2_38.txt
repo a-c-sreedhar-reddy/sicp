@@ -1,0 +1,5 @@
+Commutative is the property that op should satisfy to guarantee 
+that fold-right and fold-left will produce the same values for any sequence.
+
+
+(op a b) === (op b a)
