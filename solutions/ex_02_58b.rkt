@@ -26,7 +26,7 @@
   (and (pair? x) (not (eq? (member '+ x ) false))))
 
 (define (addend s)
-   (car (take s (index-of s '+))))
+   (extract-ifsingle (take s (index-of s '+))))
 
 (define (extract-ifsingle s)
   (if (= (length s) 1)
@@ -42,7 +42,7 @@
        (not (eq? (member '* x ) false))))
 
 (define (multiplier s)
-   (car (take s (index-of s '*))))
+   (extract-ifsingle (take s (index-of s '*))))
 
 (define (multiplicand s)
   (extract-ifsingle (cdr (member '* s))))
